@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import time
 import string
 file= open ("pg1497.txt", encoding="utf8")
 text = file.read().replace("\n", " " )
@@ -29,3 +30,4 @@ for x, b[x] in b.items():
 plt.bar(b.keys(), b.values(), color= 'red')
 #plt.hist(b.values(), len(b.keys()), color= 'yellow')
 plt.show()
+print(time.process_time())
